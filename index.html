@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up</title>
+  <style>
+    body {
+      background-color: #0074e4; /* Fondo azul */
+      text-align: center; /* Centra el texto */
+      color: white; /* Texto blanco */
+      font-family: Arial, sans-serif; /* Tipo de letra */
+    }
+
+    form {
+      margin: 0 auto; /* Centra el formulario */
+      max-width: 300px; /* Ancho máximo del formulario */
+      background-color: white; /* Fondo blanco del formulario */
+      padding: 20px; /* Espaciado interno del formulario */
+      border-radius: 10px; /* Bordes redondeados del formulario */
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra del formulario */
+    }
+
+    label, input, button {
+      display: block; /* Pone cada elemento en una línea */
+      margin-bottom: 10px; /* Espaciado entre elementos */
+      width: 100%; /* Ocupa todo el ancho del contenedor */
+    }
+
+    button {
+      background-color: #0074e4; /* Fondo azul del botón */
+      color: white; /* Texto blanco del botón */
+      border: none; /* Sin borde del botón */
+      padding: 10px 20px; /* Espaciado interno del botón */
+      border-radius: 5px; /* Bordes redondeados del botón */
+      cursor: pointer; /* Cambia el cursor al pasar el ratón por encima */
+    }
+  </style>
+</head>
+<body>
+  <h1>Sign up</h1>
+  <form id="registro-form">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" autocomplete="on" placeholder="Nombre">
+
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" autocomplete="on" required placeholder="Apellido">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" autocomplete="on" required placeholder="Email">
+
+    <label for="password">password:</label>
+    <input type="password" id="password" name="password" autocomplete="on" required placeholder="password">
+    
+    <button type="submit">Registrar Usuario</button>
+  </form>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
